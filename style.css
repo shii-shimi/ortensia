@@ -30,7 +30,7 @@ a {
 
 .hed {
     display: flex;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: 游明朝;
 }
 
@@ -337,4 +337,20 @@ a.btn-border-shadow--color2:before {
   border-radius: 100vh;
   -webkit-box-shadow: 3px 3px 0 #050505;
   box-shadow: 3px 3px 0 #080808;
+}
+
+footer {
+    background-color: #444;
+    height: 150px;
+}
+
+.foot {
+    text-align: center;
+    margin-top: 50px;    
+}
+
+.foot .f {
+    color: rgb(250, 249, 249);
+    font-size: 2rem;
+    margin-top: 50px;
 }
