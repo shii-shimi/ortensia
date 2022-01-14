@@ -402,13 +402,48 @@ footer {
 
 
 /**********プロフィールページ***********/
+.pro {
+    display: flex;
+    text-align: center;
+    margin: 135px 70px;
+}
 
-.promain {}
-h3 {}
-.mb {}
-.name _{}
-.roma{}
-.jp {}
-.comcept {}
-.shopc {}
-.phot {}
+.promain {
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.pro .promain h3 {
+    font-family: 游明朝;
+    color: #828282;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.promain .mb .link {}
+.mb .link .insta {}
+
+.name {
+    margin-bottom: 50px;
+}
+.roma{
+    font-size: 1.3rem;
+}
+.jp {
+    font-family: 游明朝;
+    font-size: 2rem;
+}
+.comcept {
+    margin-bottom: 50px;
+}
+
+.shopc {
+    font-size: 1.2rem;
+    font-family: 游明朝;
+}
+.phot img {
+    width: 68%;
+    height: 99%;
+    object-fit: cover;
+}
