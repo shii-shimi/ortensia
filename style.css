@@ -501,7 +501,7 @@ iframe {
 .about h1 {
     font-family: 游明朝;
     color: #828282;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     margin-bottom: 50px;
     margin-top: 40px;
 }
@@ -516,7 +516,7 @@ iframe {
 .rigth p {
     text-align: left;
     display: inline-block;
-    font-size: 0.2rem;
+    font-size: 0.7rem;
     font-family: 游明朝;
     color: #6b6b6b;
     margin-top: 85px;
@@ -526,7 +526,7 @@ iframe {
     position: absolute;
     top: 30%;
     left: 40%;
-    font-size: 0.3rem;
+    font-size: 0.7rem;
     font-family: 游明朝;
     color: #6b6b6b;
     margin-bottom: 50px;
