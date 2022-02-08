@@ -123,10 +123,89 @@ a {
     margin-bottom: 50px;
     background-color: #f0f8ff;
 }
+
+ /*********************************************
+  * Scroll
+  ***********************************************/
+  /*ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒ€ã‚¦ãƒ³å…¨ä½“ã®å ´æ‰€*/
+ 
+
+.scrolldown2{
+    position: absolute;
+    bottom: 12%;
+    left: 80%;
+    z-index: 60;
+}
+/*Scrollãƒ†ã‚­ã‚¹ãƒˆã®æå†™*/
+.scrolldown2 span{
+    /*æç”»ä½ç½®*/
+  position: absolute;
+  left:10px;
+  bottom:10px;
+    /*ãƒ†ã‚­ã‚¹ãƒˆã®å½¢çŠ¶*/
+  color: black;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*ç¸¦æ›¸ãè¨­å®š*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+/* ä¸¸ã®æå†™ */
+.scrolldown2:before {
+    content: "";
+    /*æç”»ä½ç½®*/
+    position: absolute;
+    bottom:0;
+    left:-4px;
+    /*ä¸¸ã®å½¢çŠ¶*/
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  background:black;
+    /*ä¸¸ã®å‹•ã1.6ç§’ã‹ã‘ã¦é€éŽã—ã€æ°¸é ã«ãƒ«ãƒ¼ãƒ—*/
+    animation:
+    circlemove 1.6s ease-in-out infinite,
+    cirlemovehide 1.6s ease-out infinite;
+}
+/*ä¸‹ã‹ã‚‰ã®è·é›¢ãŒå¤‰åŒ–ã—ã¦ä¸¸ã®å…¨ä½“ãŒä¸Šã‹ã‚‰ä¸‹ã«å‹•ã*/
+
+@keyframes circlemove{
+    0%{bottom:45px;}
+   100%{bottom:-5px;}
+}
+
+/*ä¸Šã‹ã‚‰ä¸‹ã«ã‹ã‘ã¦ä¸¸ãŒé€éŽâ†’ä¸é€æ˜Žâ†’é€éŽã™ã‚‹*/
+@keyframes cirlemovehide{
+    0%{opacity:0}
+   50%{opacity:1;}
+  80%{opacity:0.9;}
+100%{opacity:0;}
+}
+/* ç·šã®æå†™ */
+.scrolldown2:after{
+content:"";
+  /*æç”»ä½ç½®*/
+position: absolute;
+bottom:0;
+left:0;
+  /*ç·šã®å½¢çŠ¶*/
+width:0.5px;
+height: 50px;
+background:black;
+}
+
+
+
 /* --------------------------------------------------
   幅768px以上のスタイル指定 ここから
 -------------------------------------------------- */
 @media screen and (min-width: 768px) {
+
+    a:link, a:visited, a:hover, a:active {
+        color: black;
+      }
+
 /* ハンバーガーボタン */
 .btn-burger {
     display: none;  /*768px以上では使用しない */
@@ -158,6 +237,11 @@ header {
     justify-content: center;
     height: 75px;
     align-items: center;
+    color: #000;
+}
+
+.nav-list a:hover {
+    color: #000;
 }
 .nav-list li:not(:last-child) {
     border-right: 1px solid #fff;
@@ -547,4 +631,75 @@ iframe {
     color: #6b6b6b;
     margin-bottom: 50px;
 }
+
+
+  /*********************************************
+  * Scroll
+  ***********************************************/
+  /*ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒ€ã‚¦ãƒ³å…¨ä½“ã®å ´æ‰€*/
+  .scrolldown2 {
+    position: absolute;
+    bottom: 75%;
+    left: 75%;
+    z-index: 60;
+}
+/*Scrollãƒ†ã‚­ã‚¹ãƒˆã®æå†™*/
+.scrolldown2 span{
+    /*æç”»ä½ç½®*/
+  position: absolute;
+  left:10px;
+  bottom:10px;
+    /*ãƒ†ã‚­ã‚¹ãƒˆã®å½¢çŠ¶*/
+  color: black;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*ç¸¦æ›¸ãè¨­å®š*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+/* ä¸¸ã®æå†™ */
+.scrolldown2:before {
+    content: "";
+    /*æç”»ä½ç½®*/
+    position: absolute;
+    bottom:0;
+    left:-4px;
+    /*ä¸¸ã®å½¢çŠ¶*/
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  background:black;
+    /*ä¸¸ã®å‹•ã1.6ç§’ã‹ã‘ã¦é€éŽã—ã€æ°¸é ã«ãƒ«ãƒ¼ãƒ—*/
+    animation:
+    circlemove 1.6s ease-in-out infinite,
+    cirlemovehide 1.6s ease-out infinite;
+}
+/*ä¸‹ã‹ã‚‰ã®è·é›¢ãŒå¤‰åŒ–ã—ã¦ä¸¸ã®å…¨ä½“ãŒä¸Šã‹ã‚‰ä¸‹ã«å‹•ã*/
+
+@keyframes circlemove{
+    0%{bottom:45px;}
+   100%{bottom:-5px;}
+}
+
+/*ä¸Šã‹ã‚‰ä¸‹ã«ã‹ã‘ã¦ä¸¸ãŒé€éŽâ†’ä¸é€æ˜Žâ†’é€éŽã™ã‚‹*/
+@keyframes cirlemovehide{
+    0%{opacity:0}
+   50%{opacity:1;}
+  80%{opacity:0.9;}
+100%{opacity:0;}
+}
+/* ç·šã®æå†™ */
+.scrolldown2:after{
+content:"";
+  /*æç”»ä½ç½®*/
+position: absolute;
+bottom:0;
+left:0;
+  /*ç·šã®å½¢çŠ¶*/
+width:0.5px;
+height: 50px;
+background:black;
+}
+
 }
