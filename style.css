@@ -124,76 +124,7 @@ a {
     background-color: #f0f8ff;
 }
 
- /*********************************************
-  * Scroll
-  ***********************************************/
-  /*ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒ€ã‚¦ãƒ³å…¨ä½“ã®å ´æ‰€*/
  
-
-.scrolldown2{
-    position: absolute;
-    bottom: 12%;
-    left: 80%;
-    z-index: 60;
-}
-/*Scrollãƒ†ã‚­ã‚¹ãƒˆã®æå†™*/
-.scrolldown2 span{
-    /*æç”»ä½ç½®*/
-  position: absolute;
-  left:10px;
-  bottom:10px;
-    /*ãƒ†ã‚­ã‚¹ãƒˆã®å½¢çŠ¶*/
-  color: black;
-  font-size: 0.7rem;
-  letter-spacing: 0.05em;
-  /*ç¸¦æ›¸ãè¨­å®š*/
-  -ms-writing-mode: tb-rl;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-}
-/* ä¸¸ã®æå†™ */
-.scrolldown2:before {
-    content: "";
-    /*æç”»ä½ç½®*/
-    position: absolute;
-    bottom:0;
-    left:-4px;
-    /*ä¸¸ã®å½¢çŠ¶*/
-  width:10px;
-  height:10px;
-  border-radius: 50%;
-  background:black;
-    /*ä¸¸ã®å‹•ã1.6ç§’ã‹ã‘ã¦é€éŽã—ã€æ°¸é ã«ãƒ«ãƒ¼ãƒ—*/
-    animation:
-    circlemove 1.6s ease-in-out infinite,
-    cirlemovehide 1.6s ease-out infinite;
-}
-/*ä¸‹ã‹ã‚‰ã®è·é›¢ãŒå¤‰åŒ–ã—ã¦ä¸¸ã®å…¨ä½“ãŒä¸Šã‹ã‚‰ä¸‹ã«å‹•ã*/
-
-@keyframes circlemove{
-    0%{bottom:45px;}
-   100%{bottom:-5px;}
-}
-
-/*ä¸Šã‹ã‚‰ä¸‹ã«ã‹ã‘ã¦ä¸¸ãŒé€éŽâ†’ä¸é€æ˜Žâ†’é€éŽã™ã‚‹*/
-@keyframes cirlemovehide{
-    0%{opacity:0}
-   50%{opacity:1;}
-  80%{opacity:0.9;}
-100%{opacity:0;}
-}
-/* ç·šã®æå†™ */
-.scrolldown2:after{
-content:"";
-  /*æç”»ä½ç½®*/
-position: absolute;
-bottom:0;
-left:0;
-  /*ç·šã®å½¢çŠ¶*/
-width:0.5px;
-height: 50px;
-background:black;
-}
 
 
 
@@ -244,14 +175,14 @@ header {
     color: #000;
 }
 .nav-list li:not(:last-child) {
-    border-right: 1px solid #fff;
+    /*border-right: 1px solid #fff;*/
 }
 }
 
 /********************メイン************************/
 .main {
     text-align: center;
-    margin: 60px 60px;
+    margin: 10px 60px;
 }
 
 .mainimg {
@@ -263,443 +194,116 @@ header {
     height: 100%;
 }
 
-.about{
-    margin-top: 0;
+.reserve {
+    padding: 80px;
+    background-color: #E6E2BC;
+}
+.tittle{
+    font-size: 3.5rem;
 }
 
-.about h1{
-    font-family: 游明朝;
-    color: #828282;
-    font-size: 1.5rem;
-    margin-bottom: 100px;
-    margin-top: 40px;
-}
-
-/****プロフィールリンクボタン****/
-/*その他と主な共通部分は省略*/
-
-a.btn-border {
-    border-radius: 0;
-  }
-  
-  a.btn-border:before,
-  a.btn-border:after {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    content: '';
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    background: #777676;
-  }
-  
-  a.btn-border:before {
-    top: 0;
-    left: 0;
-  }
-  
-  a.btn-border:after {
-    right: 0;
-    bottom: 0;
-  }
-  
-  a.btn-border:hover:before,
-  a.btn-border:hover:after {
-    width: 0;
-  }
-
-
-/******************************************/
-
-.menu {
-    margin-top: 90px;
-}
-
-.menu .menulist {
-    width: 70%;
-    height: 60%;
-}
-
-.line .lineimg {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-top: 100px;
-}
-
-.title {
-    object-fit: cover;
-    height: 50%;
-    width: 40%;
-}
-
-.box {
+.box { 
+    border: 2px solid #000;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    width: 10%;
     text-align: center;
-	display: block;
-
-}
-.box .rigth {
-    margin-bottom: 65px
-
-}
-.rigth p {
-    text-align: left;
-	display: inline-block;
-    font-size: 1.8rem;
-    font-family:  游明朝;
-    color: #6b6b6b;
-    margin-top: 85px;
-}
-
-
-.access {
-    margin-top: 40px;
-    margin-bottom: 50px;
-}
-
-.access .link img {
-    margin: 0 30px;
-    margin-bottom: 80px;
-}
-
-.comment {
-    position: relative;
-}
-
-.comment .back {
-    
-    text-align: left;
-    display: block;
-    margin-left: 10%;
-}
-
-.blog {
-    margin-top: 60px;
-}
-
-.blog .in p{
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    font-size: 2rem;
-    font-family: 游明朝;
-    color: #6b6b6b;
-    margin-bottom: 50px;
-}
-
-
-/********styleリンクボタン********/
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-/* 背景用*/
-body {
-  padding: 30px;
-}
-
-.btn,
-a.btn,
-button.btn {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.5;
-  position: relative;
-  display: inline-block;
-  padding: 1rem 4rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  color: #262626;
-  border-radius: 0.5rem;
-}
-
-a.btn-border-shadow {
-  padding: calc(1.5rem - 12px) 3rem 1.5rem;
-
-  background: #fff;
-}
-
-a.btn-border-shadow:before {
-  position: absolute;
-  top: -6px;
-  left: -6px;
-  width: 100%;
-  height: 100%;
-  content: "";
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  border: 3px solid #3d3d3d;
-  border-radius: 0.5rem;
-}
-
-a.btn-border-shadow:hover {
-  padding: calc(1.5rem - 6px) 3rem;
-}
-
-a.btn-border-shadow:hover:before {
-  top: 0;
-  left: 0;
-}
-
-a.btn-border-shadow--color2 {
-  border-radius: 100vh;
-}
-
-a.btn-border-shadow--color2:before {
-  border-radius: 100vh;
-  -webkit-box-shadow: 3px 3px 0 #050505;
-  box-shadow: 3px 3px 0 #d5d5d5;
-}
-
-footer {
-    background-color: #444;
-    height: 150px;
-}
-
-.foot {
-    text-align: center;       
-}
-    
-.foot .campany{
-    color: rgb(250, 249, 249);
-    font-size: 2rem;    
-    font-family: monospace;
-}
-
-
-/**********プロフィールページ***********/
-.pro {
-    display: flex;
-    text-align: center;
-    margin: 135px 100px;
-}
-
-.promain {
-    text-align: center;
-    /* margin-left: 100px; */
-    margin-top: 50px;
-    width: 60%;
-}
-
-
-.pro .promain h3 {
-    font-family: 游明朝;
-    color: #828282;
-    font-size: 4rem;
-    margin-bottom: 10px;
-}
-
-.link2 {
-    margin-bottom: 50px;
-}
-.mb .link .insta {}
-
-.name {
-    margin-bottom: 50px;
-}
-.roma{
-    font-size: 1.3rem;
-}
-.jp {
-    font-family: 游明朝;
-    font-size: 2rem;
-}
-.comcept {
-    margin-bottom: 50px;
-}
-
-.shopc {
-    font-size: 1.2rem;
-    font-family: 游明朝;
-}
-
-.phot {
-    width: 40%;
-}
-
-.phot img {
-    width: 90%;
-    object-fit: cover;
-    text-align: center;
-}
-
-/************************/
-@media screen and (max-width: 767px ){
-iframe {
-    max-width: 76%;
-    height: 50%;
-    object-fit: contain;
-}
-
-    
-.menu .menulist {
-    width: 90%;
-}
-
-
-.pro {
     margin: 0 auto;
-    margin-top: 100px;
 }
 
-.promain {
-    margin: 30px 10px;
-    width: 60%;
+.box2 { 
+    border: 2px solid #000;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    width: 120%;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.phot {
-    width: 40%;
+
+.coll {
+    margin-top: 90px;
+    display: flex;
     justify-content: center;
 }
-
-.phot img {
-    object-fit: cover;
-    width: 118%;
-    height: 45%;
-    margin-top: 82px;
-
+.tell {   
+    margin-bottom: 35px;
+    margin-right: 80px;
+    margin-left: 80px;
 }
-.shopc {
-    font-size: 1rem;
-    font-family: 游明朝;
+.tellicon {
+    margin-right: 20px;
+    max-width: 36px;
 }
 
-/*******main*******/
-.mainimg {
-    text-align: center;
+.atagu{
+    text-decoration: none;
+    color: #444;
+}
+
+/************************************************************************/
+/*コンセプト*/
+.concept {
+    padding: 100px;
+    background-color: #d1cdacc7;
+}
+.conceptimg {
     width: 100%;
+    margin-top: 80px;
 }
 
-.main {
-    text-align: center;
-    margin: 60px 0;
+/***************************************************************************/
+/*各リンク*/
+
+.link {
+    background-color: #E6E2BC;
+    padding: 50px 0;
+}
+.link1 { 
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.link2 { 
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    padding-top: 40px;
 }
 
-.title {
-    object-fit: cover;
-    width: 60%;
+
+.linkimg {
+    width: 50%;
+}
+.linkimg2 {
+    width: 35%;
 }
 
-.about h1 {
-    font-family: 游明朝;
-    color: #828282;
-    font-size: 1rem;
-    margin-bottom: 50px;
-    margin-top: 40px;
+.menulink {
+    margin: 0 -200px;
 }
 
-.comment .back {
-    text-align: left;
-    display: block;
-    margin-left: 0;
-    max-width: 60%;
+.productlink {}
+.bloglink {
+    margin-left: -270px;
 }
 
-.rigth p {
-    text-align: left;
+/****************************************************************************/
+/*Instagram*/
+
+.insta {
+    background-color: #E6E2BC;
+    padding: 90px 0;
+}
+.style {
     display: inline-block;
-    font-size: 1rem;
-    font-family: 游明朝;
-    color: #6b6b6b;
-    margin-top: 85px;
+    margin-top: 55px;
 }
-
-.blog .in p {
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    font-size: 1rem;
-    font-family: 游明朝;
-    color: #6b6b6b;
-    margin-bottom: 50px;
-}
-
-
-  /*********************************************
-  * Scroll
-  ***********************************************/
-  /*ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒ€ã‚¦ãƒ³å…¨ä½“ã®å ´æ‰€*/
-  .scrolldown2 {
-    position: absolute;
-    bottom: 75%;
-    left: 75%;
-    z-index: 60;
-}
-/*Scrollãƒ†ã‚­ã‚¹ãƒˆã®æå†™*/
-.scrolldown2 span{
-    /*æç”»ä½ç½®*/
-  position: absolute;
-  left:10px;
-  bottom:10px;
-    /*ãƒ†ã‚­ã‚¹ãƒˆã®å½¢çŠ¶*/
-  color: black;
-  font-size: 0.7rem;
-  letter-spacing: 0.05em;
-  /*ç¸¦æ›¸ãè¨­å®š*/
-  -ms-writing-mode: tb-rl;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-}
-/* ä¸¸ã®æå†™ */
-.scrolldown2:before {
-    content: "";
-    /*æç”»ä½ç½®*/
-    position: absolute;
-    bottom:0;
-    left:-4px;
-    /*ä¸¸ã®å½¢çŠ¶*/
-  width:10px;
-  height:10px;
-  border-radius: 50%;
-  background:black;
-    /*ä¸¸ã®å‹•ã1.6ç§’ã‹ã‘ã¦é€éŽã—ã€æ°¸é ã«ãƒ«ãƒ¼ãƒ—*/
-    animation:
-    circlemove 1.6s ease-in-out infinite,
-    cirlemovehide 1.6s ease-out infinite;
-}
-/*ä¸‹ã‹ã‚‰ã®è·é›¢ãŒå¤‰åŒ–ã—ã¦ä¸¸ã®å…¨ä½“ãŒä¸Šã‹ã‚‰ä¸‹ã«å‹•ã*/
-
-@keyframes circlemove{
-    0%{bottom:45px;}
-   100%{bottom:-5px;}
-}
-
-/*ä¸Šã‹ã‚‰ä¸‹ã«ã‹ã‘ã¦ä¸¸ãŒé€éŽâ†’ä¸é€æ˜Žâ†’é€éŽã™ã‚‹*/
-@keyframes cirlemovehide{
-    0%{opacity:0}
-   50%{opacity:1;}
-  80%{opacity:0.9;}
-100%{opacity:0;}
-}
-/* ç·šã®æå†™ */
-.scrolldown2:after{
-content:"";
-  /*æç”»ä½ç½®*/
-position: absolute;
-bottom:0;
-left:0;
-  /*ç·šã®å½¢çŠ¶*/
-width:0.5px;
-height: 50px;
-background:black;
-}
-
+.styleimg{
+    height: 100%;
+    margin-bottom: 20px;
 }
