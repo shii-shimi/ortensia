@@ -13,7 +13,7 @@ body {
 header {
     width: 100%;       /* 幅いっぱいを指定 */
     height: 110px;      /* 高さを50pxに指定 */
-    background:white ;    /* 背景色を指定 */
+    background: transparent;    /* 背景色を指定 */
     padding: 20px 0;         /* ヘッダーに上下左右それぞれ余白を指定 */
     box-sizing: border-box;     /* padding分を含んで幅を100%にするため */
     position: fixed;            /* ウィンドウを基準に画面に固定 */
@@ -100,6 +100,7 @@ a {
     text-decoration: none;
     color: rgb(2, 2, 2);
     font-family: 游明朝;
+    font-size: 1.3rem;
 }
 .nav-list {
     list-style: none;
@@ -112,6 +113,7 @@ a {
 }
 .nav-list li {
     margin: 0;
+    margin-right: 25px;
     padding: 10px;
 }
 .nav-toggle:checked ~ .nav .nav-list {
@@ -144,7 +146,7 @@ a {
 header {
         width: 100%;       /* 幅いっぱいを指定 */
         height: 110px;      /* 高さを50pxに指定 */
-        background: white;     /* 背景色を指定 */
+        background: transparent;     /* 背景色を指定 */
         padding: 20px 50px;         /* ヘッダーに上下左右それぞれ余白を指定 */
         box-sizing: border-box;     /* padding分を含んで幅を100%にするため */
         position: fixed;            /* ウィンドウを基準に画面に固定 */
@@ -166,7 +168,7 @@ header {
 .nav-list {
     display: flex;
     justify-content: center;
-    height: 75px;
+    height: 30px;
     align-items: center;
     color: #000;
 }
@@ -182,7 +184,31 @@ header {
 /********************メイン************************/
 .main {
     text-align: center;
-    margin: 10px 60px;
+    margin: 0px 60px;
+    margin-top: 20px;
+}
+
+.btntell {
+    position: fixed;
+    bottom: 205px;
+    right: 10px;
+}
+.btn--orange,
+a.btn--orange {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  color: #fff;
+  background-color: #606060;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #606060;
+}
+
+.btn--orange2 {
+    display: none;
 }
 
 .mainimg {
@@ -192,6 +218,15 @@ header {
 .mainimg .logo {
     width: 90%;
     height: 100%;
+    position: relative;
+}
+
+.logomarck {
+    position: absolute;
+    mix-blend-mode: multiply;
+    width: 25%;
+    left: 40%;
+    top: 42%;
 }
 
 .reserve {
@@ -302,8 +337,146 @@ header {
 .style {
     display: inline-block;
     margin-top: 55px;
+    margin-bottom: 50px;
 }
 .styleimg{
-    height: 100%;
-    margin-bottom: 20px;
+    height: 180px;
+   
 }
+
+.more {
+    color: #444;
+    width: 20%;
+    border: 2px solid #000;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+/***************************************************************************/
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 0 60px;
+    background-color: #E6E2BC;
+    padding-top: 57px;
+}
+.shop { 
+    list-style: none;
+}
+.shousai {
+    margin-right: 60px;
+    list-style: none;
+}
+.time {}
+
+
+
+/*********************************************************************************/
+ /* モバイル向けスタイル */
+
+ @media screen and (max-width: 540px) {
+
+
+    .btntell {
+        bottom: 10px;
+        left: 65px;
+    }
+
+    .btn--orange,
+    a.btn--orange {
+        display: none;
+    }
+
+    .btn--orange2, 
+    a.btn--orange2 {
+        display: initial;
+        position: fixed;
+        bottom: 10px;
+        right: 90px;
+        color: #fff;
+        background-color: #606060;
+        padding: 3px 55px;
+    }
+    .btn--orange2:hover,
+    a.btn--orange2:hover {
+      color: #fff;
+      background: #606060;
+    }
+
+    .main {
+        margin: 0;
+    }
+
+    .box {
+        width: 60%;
+    }
+
+    .coll {
+         display: initial; 
+    }
+
+    .tell {
+        margin-bottom: 35px;
+        margin-top: 70px;
+         margin-right: 0px; 
+         margin-left: 0px; 
+    }
+
+    .box2 {
+        width: 100%;
+    }
+
+    .concept {
+        padding: initial;
+        padding-bottom: 30px;
+    }
+
+    .link1 { 
+        display: initial;
+    }
+
+    .menulink {
+        margin: initial; 
+    }
+
+    .linkimg {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+
+    .bloglink {
+        margin-left: initial; 
+    }
+
+    .link2 {
+        display: initial;
+    }
+
+    .linkimg2 {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+
+    .style {
+        display: flex;
+    }
+
+    .styleimg {
+        height: initial;
+        width: 25%;
+    }
+
+    footer{
+        margin: 0;
+    }
+
+    .shousai {
+        margin-right: 10px;
+    }
+ }
+
+
+
