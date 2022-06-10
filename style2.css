@@ -1,0 +1,116 @@
+
+/*描くページスタイル***/
+
+/*プロフィールページ*/
+.profilearea {
+    padding: 80px;
+    background-color: rgb(241 236 185 / 63%);
+}
+
+.proimg {
+    padding-top: 75px;
+    width: 30%;
+}
+
+.deta {
+    text-align: left;
+    list-style: none;
+    padding: 50px 70px;
+    margin-bottom: 0;
+}
+
+.name {
+    font-size: 2rem;
+    padding-top: 25px;
+}
+
+/**********************************************/
+
+/*menuページ*/
+
+.menuarea {
+    padding: 80px;
+    background-color: rgb(241 236 185 / 63%);
+}
+.box3 { 
+    border: 2px solid #000;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    width: 100%;
+    text-align: left;
+}
+
+.menu {
+    font-size: 2.3rem;
+    padding-top: 30px;
+}
+
+  
+
+
+
+/************************************************/
+/*アクセスページ*/
+
+.deta2 {
+    text-align: center;
+    list-style: none;
+    padding: 50px 70px;
+}
+.mapimg {
+    width: 50%;
+}
+
+.add {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add::before,
+.add::after {
+    content: '';
+    width: 9%;
+    height: 3px;
+    background-color: #000;
+}
+.add::before {
+    margin-right: 30px;
+}
+.add::after {
+    margin-left: 30px;
+}
+
+.sub-titlle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-titlle::before,
+.sub-titlle::after {
+    content: '';
+    width: 9%;
+    height: 3px;
+    background-color: #000;
+}
+.sub-titlle::before {
+    margin-right: 30px;
+}
+.sub-titlle::after {
+    margin-left: 30px;
+}
+
+
+ /*********** モバイル向けスタイル */
+
+ @media screen and (max-width: 540px) {
+    .menuarea {
+        padding: 0px;
+    }
+    .mapimg {
+        margin-bottom: 35px;
+    }
+}
