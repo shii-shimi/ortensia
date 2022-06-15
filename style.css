@@ -3,7 +3,7 @@
 
 body {
     font-size: 16px;
-    font-family: "MS 明朝","MS P明朝","游明朝",sans-serif,serif;
+    font-family: "MS 明朝","MS P明朝","游明朝",sans-serif,serif,;
     padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
     margin: 0 auto;
     width: 100%;
@@ -44,6 +44,7 @@ a {
     position: absolute;
     top: 5px;
     right: 10px;
+    z-index: 9999;  /*ボタンが最前線に来るように設定*/
 }
 /*ハンバーガーアイコンを作る三本線*/
 .icon, .icon:before, .icon:after {
@@ -107,9 +108,13 @@ a {
     display: none;
     margin: 0;
     padding-left: 70px;
-    padding-top: 30px;
+    padding-top: 400px;
+    padding-bottom: 50px;
     background-color: #fff;
-   
+    height: 100%;
+    width: 374px;
+    text-align: center;
+    z-index: 9998;  /*ハンバーガーボタンより後ろに設定*/
 }
 .nav-list li {
     margin: 0;
@@ -145,8 +150,7 @@ a {
 }
 header {
         width: 100%;       /* 幅いっぱいを指定 */
-        height: 110px;      /* 高さを50pxに指定 */
-        background: transparent;     /* 背景色を指定 */
+        height: 110px;      /* 高さを50pxに指定 */    /* 背景色を指定 */
         padding: 20px 50px;         /* ヘッダーに上下左右それぞれ余白を指定 */
         box-sizing: border-box;     /* padding分を含んで幅を100%にするため */
         position: fixed;            /* ウィンドウを基準に画面に固定 */
@@ -155,6 +159,9 @@ header {
         display: flex;             /* 中の要素を横並びにする */
         align-items: center;            /* 中の要素を上下中央に並べる */
         z-index:9999;
+        background-color: rgb(255 255 255 / 86%); /* 背景色を指定 */
+        opacity: 0.8;
+
 }
 
 .nav-toggle:checked ~ .nav .nav-list {
@@ -171,6 +178,13 @@ header {
     height: 30px;
     align-items: center;
     color: #000;
+
+    list-style: none;
+    margin: 0;
+    padding-left: 70px;
+    padding-top: 30px;
+    background-color: #fff;
+
 }
 
 .nav-list a:hover {
@@ -231,7 +245,7 @@ a.btn--orange2  {
 }
 
 .reserve {
-    padding: 80px;
+    padding: 160px 80px;
     background-color: rgb(241 236 185 / 63%);
 }
 .tittle{
@@ -409,12 +423,16 @@ footer {
     }
 
 
+    .mainimg .logo {
+        width: 100%;
+    }
     .logomarck {
-        top: 42%;
+        top: 20%;
     }
 
     .main {
         margin: 0;
+        margin-top: -90px;
     }
 
     .box {
