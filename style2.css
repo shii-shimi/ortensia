@@ -4,7 +4,7 @@
 /*プロフィールページ*/
 .profilearea {
     padding: 80px;
-    background-color: rgb(241 236 185 / 63%);
+    background-color: #f0efeea3;
 }
 
 .proimg {
@@ -30,7 +30,7 @@
 
 .menuarea {
     padding: 80px;
-    background-color: rgb(241 236 185 / 63%);
+    background-color: #f0efeea3;
 }
 .box3 { 
     border: 2px solid #000;
