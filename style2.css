@@ -9,7 +9,7 @@
 
 .proimg {
     padding-top: 75px;
-    width: 30%;
+    width: 60%;
 }
 
 .deta {
@@ -39,6 +39,7 @@
     border-right: transparent;
     width: 100%;
     text-align: left;
+    margin-bottom: 15px;
 }
 
 .menu {
@@ -112,5 +113,13 @@
     }
     .mapimg {
         margin-bottom: 35px;
+    }
+
+    .profilearea {
+        padding: 30px;
+        margin-top: -7px;
+    }
+    .deta {
+        padding: 50px 20px;
     }
 }
