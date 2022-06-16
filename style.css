@@ -521,7 +521,7 @@ footer {
 
 .fadeUp{
     animation-name:fadeUpAnime;
-    animation-duration:5s;
+    animation-duration:3s;
     animation-fill-mode:forwards;
     opacity:0;
     }
@@ -551,21 +551,21 @@ footer {
 /* アニメーションスタートの遅延時間を決めるCSS*/
 
 .delay-time02{
-    animation-delay: 3s;
+    animation-delay: 1s;
     }
     
     .delay-time03{
-    animation-delay: 4s;
+    animation-delay: 1.5s;
     }
     .delay-time04{
-        animation-delay: 5s;
+        animation-delay: 2s;
         }
         .delay-time05{
-            animation-delay: 6s;
+            animation-delay: 2.5s;
             }
             
             .delay-time06{
-                animation-delay: 7s;
+                animation-delay: 3s;
                 }
             
 
