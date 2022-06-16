@@ -328,9 +328,11 @@ a.btn--orange2  {
 
 .linkimg {
     width: 50%;
+    opacity: 0;
 }
 .linkimg2 {
     width: 35%;
+    opacity: 0;
 }
 
 .menulink {
@@ -510,6 +512,61 @@ footer {
  }
 
 
+/*==================================================
+ふわっ
+===================================*/
 
+
+/* fadeUp */
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    }
+    
+    
+    /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+     
+    .fadeUpTrigger{
+        opacity: 0;
+    }
+
+
+
+    /**順番にふわっと***/
+/* アニメーションスタートの遅延時間を決めるCSS*/
+
+.delay-time02{
+    animation-delay: 3s;
+    }
+    
+    .delay-time03{
+    animation-delay: 4s;
+    }
+    .delay-time04{
+        animation-delay: 5s;
+        }
+        .delay-time05{
+            animation-delay: 6s;
+            }
+            
+            .delay-time06{
+                animation-delay: 7s;
+                }
+            
 
 
