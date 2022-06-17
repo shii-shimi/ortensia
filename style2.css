@@ -47,6 +47,10 @@
     padding-top: 30px;
 }
 
+.menulist {
+    font-family: 游明朝;
+}
+
   
 
 
@@ -55,7 +59,7 @@
 /*アクセスページ*/
 
 .deta2 {
-    text-align: center;
+    text-align: left;
     list-style: none;
     padding: 50px 70px;
 }
@@ -66,10 +70,10 @@
 .add {
     font-size: 1.5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 }
-.add::before,
+/*.add::before,
 .add::after {
     content: '';
     width: 9%;
@@ -82,15 +86,16 @@
 .add::after {
     margin-left: 30px;
 }
-
+*/
 .sub-titlle {
     font-size: 1.5rem;
     margin-top: 23px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    font-family: 'Roboto', sans-serif;
 }
-.sub-titlle::before,
+/*.sub-titlle::before,
 .sub-titlle::after {
     content: '';
     width: 9%;
