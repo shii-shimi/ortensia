@@ -3,7 +3,7 @@
 
 body {
     font-size: 16px;
-    font-family: "MS 明朝","MS P明朝","游明朝",sans-serif,serif,;
+    font-family: "MS 明朝","MS P明朝","游明朝",sans-serif,serif,'Roboto', sans-serif;;
     padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
     margin: 0 auto;
     width: 100%;
@@ -250,6 +250,7 @@ a.btn--orange2  {
 }
 .tittle{
     font-size: 3.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .box { 
@@ -260,6 +261,7 @@ a.btn--orange2  {
     width: 10%;
     text-align: center;
     margin: 0 auto;
+    margin-top: 12px;
 }
 
 .box2 { 
@@ -521,7 +523,7 @@ footer {
 
 .fadeUp{
     animation-name:fadeUpAnime;
-    animation-duration:3s;
+    animation-duration:1s;
     animation-fill-mode:forwards;
     opacity:0;
     }
@@ -551,21 +553,21 @@ footer {
 /* アニメーションスタートの遅延時間を決めるCSS*/
 
 .delay-time02{
-    animation-delay: 1s;
+    animation-delay: 0.5s;
     }
     
     .delay-time03{
-    animation-delay: 1.5s;
+    animation-delay: 0.65s;
     }
     .delay-time04{
-        animation-delay: 2s;
+        animation-delay: 0.75s;
         }
         .delay-time05{
-            animation-delay: 2.5s;
+            animation-delay: 0.85s;
             }
             
             .delay-time06{
-                animation-delay: 3s;
+                animation-delay: 0.95s;
                 }
             
 
