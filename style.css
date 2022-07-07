@@ -306,6 +306,13 @@ a.btn--orange2  {
     margin-top: 80px;
 }
 
+.inbox {
+    margin: 50px 10px;
+}
+
+.syoukai {
+    font-family: 游明朝;
+}
 /***************************************************************************/
 /*各リンク*/
 
@@ -468,6 +475,10 @@ footer {
         padding-bottom: 30px;
     }
 
+    .inbox {
+        margin: 50px 34px;
+    }
+    
     .link1 { 
         display: initial;
     }
