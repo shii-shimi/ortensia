@@ -399,6 +399,10 @@ footer {
 }
 .time {}
 
+.a[href^="tel:"]{
+    pointer-events: none;
+}
+
 
 
 /*********************************************************************************/
@@ -406,6 +410,10 @@ footer {
 
  @media screen and (max-width: 540px) {
 
+
+    .a[href^="tel:"]{
+        pointer-events: initial;
+    }
 
     .btntell {
         bottom: 10px;
@@ -517,6 +525,11 @@ footer {
     footer{
         margin: 0;
         padding-bottom: 100px;
+        display: initial;
+        justify-content: center;
+        margin: 0;
+        background-color:   #bdb1aecc;
+        padding-top: 20px;
     }
 
     .shousai {
