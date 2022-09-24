@@ -295,6 +295,10 @@ a.btn--orange2  {
     color: #444;
 }
 
+.annai {
+    font-family: 游明朝;
+}
+
 /************************************************************************/
 /*コンセプト*/
 .concept {
@@ -340,16 +344,12 @@ a.btn--orange2  {
 
 
 .linkimg {
-    width: 50%;
-    opacity: 0;
-}
-.linkimg2 {
-    width: 35%;
+    width: 80%;
     opacity: 0;
 }
 
 .menulink {
-    margin: 0 -200px;
+    margin: 0;
 }
 
 .productlink {}
