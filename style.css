@@ -64,7 +64,7 @@ a {
 }
 /*三本線の間隔*/
 .icon:before {
-  top: 20px;
+  top: 14px;
 }
 .icon:after {
   top: -20px;
@@ -112,7 +112,7 @@ a {
     padding-bottom: 50px;
     background-color: #fff;
     height: 100%;
-    width: 374px;
+   /* width: 374px;*/
     text-align: center;
     z-index: 9998;  /*ハンバーガーボタンより後ろに設定*/
 }
